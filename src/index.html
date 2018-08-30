@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lifted Logic</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Slick Styles -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style/style.css" type="text/css" />
+  <link rel="stylesheet" href="style/carousel.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla" />
+
+  <!-- jQuery for Hero -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="logodiv">
+      <img class="logo" src="logo/svgs/srrecordings.svg" />
+    </div>
+    <div class="navdiv">
+      <nav>
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/home.svg"/>Home</button></a>
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/records.svg"/>Records</button></a>
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/music.svg"/>Music</button></a>
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/artists.svg"/>Artist</button></a>
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/concerts.svg"/>Concerts</button></a>
+      </nav>
+      <div class="headerButton">
+        <button class="signupBtn">Sign Up</button>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <button onclick="myFunction()" class="dropBtn">Navigation</button>
+      <div id="navDropDown" class="navDropContent">
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/home.svg"/>Home</button></a>
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/records.svg"/>Records</button></a>
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/music.svg"/>Music</button></a>
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/artists.svg"/>Artist</button></a>
+        <a href="#"><button class="menuBtns"><img class="btnImage" src="icons/svgs/concerts.svg"/>Concerts</button></a>
+        <a href="#"><button class="menuBtns"><img class="btnImage"/></button>Signup</a></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="clearfix"></div>
+
+  <!-- Hero -->
+  <div class="heroContainer">
+    <div id="iFrameModal" class="iModal">
+      <div class="iModal-content">
+        <button class="close cursor" onclick="closeModal()"><img src="icons/pngs/closeIcon.png" class="videoIcon" /></button>
+        <div class="youtubeVideo">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gRXQGdQHHlw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen onclick="iFrame1"></iframe>
+        </div>
+        <div class="youtubeVideo">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NQw6wQo-yuo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="youtubeVideo">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lqhBb5dXlk4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="youtubeVideo">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6iyPGUyvleg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="heroImg"></div>
+      <div class="textContainer">
+        <div class="textDiv">
+          <span class="heroTxt">A.M. Paradox</span><br />
+          <span class="bodyTxt">Christopher Brent Wood, better known by his stage name Brent Faiyaz, is an American singer and record producer. He released his debut project, an extended play entitled A.M. Paradox, in 2016.</span><br />
+          <button class="heroPlay" onclick="openModal();iFrame1"><img class="playButton" src=icons/pngs/play_button.png /><span class="bodyTxt">Watch Video</span></button>
+        </div>
+      </div>
+  </div>
+
+  <!-- SpotLight -->
+  <div class="spotlightSection">
+    <img class="spotlightImage" src="images/brentFaiyaz.png" />
+    <div class="spotlightText">
+      <div class="headTxt1 spotlightHeading">
+        <span> Brent Faiyaz, So Far Gone </span>
+      </div>
+      <div class="bodyTxt spotlightBody">
+        <span> Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to Charlotte, North Carolina before ultimately settling in Los Angelas, California to further his music career. On January 19, 2015, he released his debut single "Allure".[4] On June 1, 2016, Faiyaz released "Invite Me", the lead single from his upcoming debut EP. On September 19, 2016, his 21st birthday, the EP entitled A.M. Paradox was released and received with positive reviews from music critics. On January 26, 2017, Sonder released their debut EP into.</span>
+      </div>
+      <div class="learnMore">
+        <button class="learnMoreBtn">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Releases -->
+  <div class="newReleaseSection">
+    <div class="newReleaseTextContainer">
+      <div class="newReleaseHead">
+        <span class="headTxt1">New Releases</span>
+      </div>
+      <div class="newReleaseTxt">
+        <span class="bodyTxt">New Albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.</span>
+      </div>
+    </div>
+    <div class="newReleaseSlider slickSlider">
+
+      <div class="slideCard">
+        <div><img class="slideImg" src="images/image4.png" /></div>
+        <div><span class="headTxt2 slideTxt">Trap Soul</span><br /><span class="headTxt3" style="color:#68C242">BYSON TILLER</span><br /><span class="bodyTxt">Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</span></div>
+      </div>
+      <div class="slideCard">
+        <div><img class="slideImg" src="images/image4.png" /></div>
+        <div><span class="headTxt2 slideTxt">Trap Soul</span><br /><span class="headTxt3" style="color:#68C242">BYSON TILLER</span><br /><span class="bodyTxt">Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</span></div>
+      </div>
+      <div class="slideCard">
+        <div><img class="slideImg" src="images/image4.png" /></div>
+        <div><span class="headTxt2 slideTxt">Trap Soul</span><br /><span class="headTxt3" style="color:#68C242">BYSON TILLER</span><br /><span class="bodyTxt">Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</span></div>
+      </div>
+
+    </div>
+    <div class="newReleaseSliderControls">
+      <button class="prev-slide slideBtn"><img src="icons/pngs/left_controller.png" /></button>
+      <button class="next-slide slideBtn"><img src="icons/pngs/right_controller.png" /></button>
+    </div>
+  </div>
+
+  <!-- Google Maps -->
+  <div style="height: 500px;" id="map"></div>
+
+  <!-- Forms -->
+
+  <div class="getInTouchSection">
+    <div class="getInTouchFormsContainer">
+      <div class="getInTouchHeader">
+        <span class="headTxt1">Get In Touch</span>
+      </div>
+      <div class="getInTouchText">
+        <span class="bodyTxt">New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.</span>
+      </div>
+      <div class="getInTouchForm">
+
+        <form action="nope... doesn't work">
+
+          <div class="formsGroup">
+            <div class="formRow">
+              <input class="formField" type="text" id="fname" placeholder="First Name">
+              <input class="formField" type="text" id="lname" placeholder="Last Name">
+            </div>
+            <div class="formRow">
+              <input class="formField" type="text" id="email" placeholder="Email Address">
+              <select class="formField" type="text" id="reason">
+                  <option value="placeholder">Reason For Contacting</option>
+                  <option value="">Music</option>
+                  <option value="">MUSIC</option>
+                  <option value="">Music</option>
+                </select>
+            </div>
+            <div class="row">
+              <textarea class="formCommentBox" id="subject" name="subject" placeholder="  Write a brief message..." style="height:200px"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <input class="submitBtn" type="submit" value="Submit">
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <div class="getInTouchImage">
+      <img src="images/image3crop.png" />
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footerContent">
+        <div class="footerTop">
+          <div class="footerColumn footerColumnLogo">
+            <img class="logoFooter" src="logo/svgs/srrecordings_white.svg" />
+            <span class="address"> 8521 W Fairfax Rd <br /> Los Angelas, CA <br /> 90210 <br /> 909.505.4302</span>
+          </div>
+          <div class="footerColumn">
+            <h4>EXPLORE</h4>
+            <a href="#">About Us</a>
+            <a href="#">Our Story</a>
+            <a href="#">Team</a>
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+          </div>
+          <div class="footerColumn">
+            <h4>MUSIC</h4>
+            <a href="#">Missing Out</a>
+            <a href="#">Trapsoul</a>
+            <a href="#">Sonder Sons</a>
+            <a href="#">Paradise today</a>
+            <a href="#">Needed</a>
+          </div>
+          <div class="footerColumn">
+            <h4>ARTISTS</h4>
+            <a href="#">Brent Faiyaz</a>
+            <a href="#">Drake</a>
+            <a href="#">Bryson Tiller</a>
+            <a href="#">Young Ford</a>
+            <a href="#">Rory Fresco</a>
+          </div>
+          <div class="footerColumn">
+            <h4>RECORDS</h4>
+            <a href="#">What a Time</a>
+            <a href="#">Coming Home</a>
+            <a href="#">Always First</a>
+            <a href="#">So Far Gone</a>
+            <a href="#">Big Bluez</a>
+          </div>
+          <div class="footerColumn">
+            <h4>CONCERTS</h4>
+            <a href="#">Midland Live</a>
+            <a href="#">Granada 2018</a>
+            <a href="#">Tiller Unplugged</a>
+            <a href="#">Love Live</a>
+            <a href="#">XX Live Mix</a>
+          </div>
+        </div>
+        <div class="footerBorder"></div>
+        <div class="footerBottom">
+          <div class="TOS">
+            <span class="dLink">Privacy Policy</span>
+            <span class="dLink">Terms & Condition</span>
+          </div>
+          <div class="socialMediaBtns">
+            <img class="mediaBtn" src="icons/svgs/youtube.svg" />
+            <img class="mediaBtn" src="icons/svgs/twitter.svg" />
+            <img class="mediaBtn" src="icons/svgs/instagram.svg" />
+            <img class="mediaBtn" src="icons/svgs/snapchat.svg" />
+          </div>
+        </div>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <!-- My Scripts -->
+  <script src="javascript/javascript.js"></script>
+  <script src="javascript/map.js"></script>
+  <!-- I should really come back and pull my key when this is done -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcFc_Epx8h090pEC12Trq3RGh8dOjwZw4&callback=initMap"></script>
+
+</body>
+
+</html>
